@@ -1,0 +1,12 @@
+[package]
+name = "task_executor"
+version = "0.1.0"
+authors = ["Sigma Prime <contact@sigmaprime.io>"]
+edition = { workspace = true }
+
+[dependencies]
+metrics = { workspace = true }
+async-channel = { workspace = true }
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
+futures = { workspace = true }
+tracing = { workspace = true }

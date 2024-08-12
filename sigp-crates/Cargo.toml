@@ -1,0 +1,21 @@
+[package]
+name = "sigp-crates"
+version = "0.1.0"
+edition = { workspace = true }
+rust-version = { workspace = true }
+authors = ["Sigma Prime"]
+repository = "https://github.com/sigp/sigp-crates"
+keywords = ["lighthouse", "ethereum", "sigp"]
+
+[features]
+full = [
+    "task-executor",
+    "metrics",
+    ]
+
+task-executor = ["dep:task-executor"]
+metrics = ["dep:metrics"]
+
+[dependencies]
+task-executor = { workspace = true, optional = true }
+metrics = { workspace = true, optional = true }
