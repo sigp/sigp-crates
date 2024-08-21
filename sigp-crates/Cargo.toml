@@ -9,13 +9,13 @@ keywords = ["lighthouse", "ethereum", "sigp"]
 
 [features]
 full = [
-    "task-executor",
+    "task_executor",
     "metrics",
     ]
 
-task-executor = ["dep:task-executor"]
+task_executor = ["dep:task_executor"]
 metrics = ["dep:metrics"]
 
 [dependencies]
-task-executor = { workspace = true, optional = true }
+task_executor = { workspace = true, optional = true }
 metrics = { workspace = true, optional = true }

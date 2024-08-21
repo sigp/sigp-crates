@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "task-executor",
+    "task_executor",
     "metrics"]
 resolver = "2"
 
