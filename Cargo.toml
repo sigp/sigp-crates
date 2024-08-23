@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "task_executor",
+    "sensitive_url",
     "metrics"]
 resolver = "2"
 
@@ -8,15 +9,17 @@ resolver = "2"
 rust-version = "1.75.0"
 edition = "2021"
 
-
 [workspace.dependencies]
 sigp-crates = { version = "0.1.0", path = "sigp-crates" }
+task_executor = { path = "task_executor" }
 metrics = { path = "metrics" }
 tokio = { version = "1.39" }
 async-channel = { version = "2.3.1" }
 futures = { version = "0.3.30" }
 tracing = { version = "0.1.4" }
 prometheus = { version = "0.13" }
+url = "2.5"
+serde = "1.0"
 
 [workspace.lints]
 rust.unreachable_pub = "warn"
